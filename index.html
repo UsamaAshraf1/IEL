@@ -355,6 +355,145 @@
       </main>
     </div>
 
+    <!------------------------- Tab Section ------------------------->
+    <div class="mt-[60px] md:mt-[100px] mx-[7vw]">
+      <h1
+        class="font-[600] text-[24px] md:text-[40px] leading-[100%] md:leading-[64px] text-[#000000] text-center"
+      >
+        Open Account
+      </h1>
+      <div
+        class="text-[#00000080] font-[500] text-[20px] leading-[100%] text-center mt-[20px]"
+      >
+        Lorem ipsum dolor sit amet constur. Pretium lacus lacus vitae tortor non
+        faucibus vulputate ossda lorem ipsumr.
+      </div>
+
+      <div class="flex justify-center">
+        <div class="flex mt-[48px] rounded-[12px]">
+          <button
+            id="core-team-tab"
+            class="tab-button text-[15px] font-[800] px-[40px] py-[16px] active_tab"
+          >
+            Sahulat (Easy) Account
+          </button>
+          <button
+            id="board-members-tab"
+            class="tab-button account_button text-[15px] px-[40px] py-[16px] font-[800]"
+          >
+            Individual Account
+          </button>
+          <button
+            id="corporate-tab"
+            class="tab-button account_button text-[15px] px-[40px] py-[16px] font-[800]"
+          >
+            Corporate Account
+          </button>
+        </div>
+      </div>
+
+      <!-- Core Team Content -->
+      <div id="core-team-content" class="team-content mt-[60px]">
+        <div class="flex justify-between items-center">
+          <div
+            class="bg-[#ffffff] border border-[#D8D9D880] py-[20px] px-[18px] rounded-[8px]"
+            style="box-shadow: 0px 8px 16px 0px #0000000f"
+          >
+            <img
+              src="IEL Assets/tab_icon_1.png"
+              alt=""
+              class="w-[40px] h-[40px]"
+            />
+            <div
+              class="text-[#00000066] mt-[24px] font-[800] text-[14px] leading-[100%]"
+            >
+              STEP 1
+            </div>
+            <p class="mt-[16px] font-[500] text-[20px] leading-[100%]">
+              Fill up your information on <br />
+              the signup form.
+            </p>
+            <hr class="mt-[32px] border-[#EA5B29] border-1" />
+          </div>
+          <div
+            class="bg-[#ffffff] border border-[#D8D9D880] py-[20px] px-[18px] rounded-[8px]"
+            style="box-shadow: 0px 8px 16px 0px #0000000f"
+          >
+            <img
+              src="IEL Assets/tab_icon_2.png"
+              alt=""
+              class="w-[40px] h-[40px]"
+            />
+            <div
+              class="text-[#00000066] mt-[24px] font-[800] text-[14px] leading-[100%]"
+            >
+              STEP 2
+            </div>
+            <p class="mt-[16px] font-[500] text-[20px] leading-[100%]">
+              Enter OTP received on the <br />
+              registered mobile number.
+            </p>
+            <hr class="mt-[32px] border-[#EA5B29] border-1" />
+          </div>
+          <div
+            class="bg-[#ffffff] border border-[#D8D9D880] py-[20px] px-[18px] rounded-[8px]"
+            style="box-shadow: 0px 8px 16px 0px #0000000f"
+          >
+            <img
+              src="IEL Assets/tab_icon_3.png"
+              alt=""
+              class="w-[40px] h-[40px]"
+            />
+            <div
+              class="text-[#00000066] mt-[24px] font-[800] text-[14px] leading-[100%]"
+            >
+              STEP 3
+            </div>
+            <p class="mt-[16px] font-[500] text-[20px] leading-[100%]">
+              Fill up your information on <br />
+              the signup form.
+            </p>
+            <hr class="mt-[32px] border-[#EA5B29] border-1" />
+          </div>
+          <div
+            class="bg-[#ffffff] border border-[#D8D9D880] py-[20px] px-[18px] rounded-[8px]"
+            style="box-shadow: 0px 8px 16px 0px #0000000f"
+          >
+            <img
+              src="IEL Assets/tab_icon_4.png"
+              alt=""
+              class="w-[40px] h-[40px]"
+            />
+            <div
+              class="text-[#00000066] mt-[24px] font-[800] text-[14px] leading-[100%]"
+            >
+              STEP 4
+            </div>
+            <p class="mt-[16px] font-[500] text-[20px] leading-[100%]">
+              Get account details on the <br />
+              registered Email ID.
+            </p>
+            <hr class="mt-[32px] border-[#EA5B29] border-1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Board Members Content (Hidden by default) -->
+      <div
+        id="board-members-content"
+        class="team-content hidden flex flex-col justify-center items-center mt-[60px]"
+      >
+        content 2
+      </div>
+
+      <div
+        id="corporate-content"
+        class="team-content hidden flex flex-col justify-center items-center mt-[60px]"
+      >
+        content 3
+      </div>
+    </div>
+
     <!-- ------------------------------Services Section------------------- -->
     <div class="mt-[80px] mx-[7vw]">
       <div class="container mx-auto">
@@ -497,16 +636,49 @@
     </div>
 
     <!-- -------------------------------Access Reports-------------- -->
-    <div class="mt-[80px]">
-      <div class="bg-[#07140D] h-[396px] relative">
-        <!-- <img
-          src="IEL Assets/mobile_new_view.png "
+    <!-- <div class="mt-[80px]">
+      <div class="relative h-[551px]">
+        <img
+          src="IEL Assets/mobile_new_view.png"
           alt=""
-          class="w-[553px] h-[551px] absolute"
-        /> -->
+          class="w-[500px] h-[551px] absolute z-20 ps-[7vw]"
+        />
+        <div
+          class="bg-[#07140D] h-[396px] absolute bottom-0 w-full z-10 text-white ps-[47vw] flex flex-col justify-center pe-[7vw]"
+        >
+          <h2 class="font-[700] text-[40px] leading-[100%]">Access Reports</h2>
+          <p class="mt-[20px] font-[500] text-[20px] leading-[100%]">
+            Freely access insightful research reports from our <br> experienced
+            Research Analysis.
+          </p>
+          <button class="mt-[48px] bg-[#E3442D] py-[20px] w-[360px]">VIEW REPORTS</button>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="mt-[80px]">
+      <div class="relative h-[551px] max-w-[1600px] mx-auto">
+        <img
+          src="IEL Assets/mobile_new_view.png"
+          alt=""
+          class="w-[500px] h-[551px] absolute z-20 left-[7%]"
+        />
+        <div
+          class="bg-[#07140D] h-[396px] absolute bottom-0 w-full z-10 text-white pl-[700px] flex flex-col justify-center pr-[7%]"
+        >
+          <h2 class="font-bold text-[40px] leading-[100%]">Access Reports</h2>
+          <p class="mt-[20px] font-medium text-[20px] leading-[100%]">
+            Freely access insightful research reports from our <br />
+            experienced Research Analysis.
+          </p>
+          <button
+            class="mt-[48px] bg-[#E3442D] py-[20px] w-[360px] max-w-[80%]"
+          >
+            VIEW REPORTS
+          </button>
+        </div>
       </div>
     </div>
-
     <!-- ------------------------------Our Strengths-------------- -->
     <div class="mt-[80px] mx-[7vw]">
       <h1
@@ -763,6 +935,32 @@
       </div>
     </div>
 
+    <script>
+      const tabs = document.querySelectorAll(".tab-button");
+      const contents = document.querySelectorAll(".team-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs
+          tabs.forEach((t) => {
+            t.classList.remove("active_tab");
+            t.classList.add("account_button");
+            t.style.background = "";
+            t.style.border = "";
+          });
+          tab.classList.add("active_tab");
+          tab.classList.remove("account_button");
+          tab.style.background =
+            "linear-gradient(180deg, #f4f4f4 0%, #fefefe 100%)";
+          tab.style.border = "4px solid #ECECEC";
+          contents.forEach((content) => content.classList.add("hidden"));
+
+          // Show the corresponding content
+          const contentId = tab.id.replace("-tab", "-content");
+          document.getElementById(contentId).classList.remove("hidden");
+        });
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
