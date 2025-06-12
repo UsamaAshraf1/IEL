@@ -369,6 +369,7 @@ html {
 
 .footer {
   font-family: "Inter";
+  background: linear-gradient(180deg, #07140d 0%, #1e1e1e 100%);
 }
 
 /* .white-button {
