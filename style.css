@@ -448,6 +448,7 @@ html {
 .active_tab {
   background: #e3442d !important;
   color: white;
+  border: none !important;
 }
 /* ---------------------------------------- */
 .how_we_do_it_graph_section div .graph_Carousel .slick-active {
