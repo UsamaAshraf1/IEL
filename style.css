@@ -1,0 +1,487 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@font-face {
+  font-family: "Cal Sans";
+  src: url("./fonts/CalSans-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TT Commons";
+  src: url("./fonts/TT_Commons_Regular.otf") format("opentype");
+}
+
+body {
+  font-family: "Inter";
+  -ms-overflow-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.graph_card_title {
+  font-family: "Cal Sans";
+}
+
+.agent_meet,
+.stats_number {
+  font-family: "JetBrains Mono";
+}
+
+.newText {
+  font-family: "TT Commons";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+
+#scrollText {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: translateY(-1000px);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/* Slider */
+.slider {
+  width: 100%;
+}
+.slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  bottom: -50px !important;
+}
+.slick-dots li {
+  /* width: 30px !important;
+  height: 10px !important; */
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #b7978c;
+  opacity: 0.4;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 32px !important;
+}
+.slick-dots li button {
+  display: none !important;
+}
+.slick-dots li.slick-active {
+  opacity: 1;
+  background-color: #b7978c;
+}
+/* .slide_one {
+  width: 36vw !important;
+  height: 650px !important;
+}
+.slide_two {
+  width: 41vw !important;
+  height: 650px !important;
+}
+@media (max-width: 1122px) {
+  .slide_one {
+    width: 82vw !important;
+  }
+  .slide_two {
+    width: 76vw !important;
+  }
+}
+@media (max-width: 768px) {
+  .slide_one {
+    width: 92vw !important;
+  }
+  .slide_two {
+    width: 89vw !important;
+  }
+} */
+.slide img {
+  background-color: transparent !important;
+}
+@media (max-width: 768px) {
+  /* .slide {
+    flex-direction: column;
+  } */
+  .slick-dots li {
+    margin-top: 50px !important;
+  }
+}
+@media (max-width: 768px) {
+}
+
+/* ---------------------------Leaf View------------------- */
+.leaf-1 {
+  margin-left: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 0 70%;
+  transform: rotate(0deg);
+}
+.leaf-2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 70%;
+  transform: rotate(90deg);
+  margin-left: 169px;
+  margin-top: 20px;
+}
+.leaf-3 {
+  width: 350px;
+  height: 350px;
+  border-radius: 0 70%;
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+.leaf-4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 70%;
+  transform: rotate(0deg);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* @media(max-width:1200px){
+  .leaf-1 {
+    margin-left: 70px;
+    width: 300px;
+    height: 350px;
+    border-radius: 0 70%;
+    transform: rotate(0deg);
+  }
+  .leaf-3 {
+    width: 330px;
+    height: 350px;
+    border-radius: 0 70%;
+    transform: rotate(90deg);
+    margin-left: 20px;
+  }
+} */
+@media (max-width: 768px) {
+  .leaf_wrapper {
+    width: 92vw;
+    overflow: hidden;
+    margin-left: -25px !important;
+  }
+}
+
+/* Agennst Animation */
+@keyframes blowUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blowDown {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.blow-up {
+  animation: blowUp 0.5s ease-out forwards;
+}
+
+.blow-down {
+  animation: blowDown 0.5s ease-in forwards;
+}
+
+/* ----------------------- */
+.button-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing as needed */
+  overflow: hidden;
+}
+
+/* .button-container::before,
+.button-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+}
+.button-container::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(32, 35, 39, 1),
+    rgba(32, 35, 39, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 1;
+}
+.button-container::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(32, 35, 39, 1),
+    rgba(32, 35, 39, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+} */
+
+/* -------------------- */
+
+@keyframes scroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes Newscroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-one {
+  display: flex;
+  animation: Newscroll 40s linear infinite;
+}
+
+.animate-scroll-four {
+  display: flex;
+  animation: Newscroll 30s linear infinite;
+}
+.animate-scroll-three {
+  display: flex;
+  animation: Newscroll 40s linear infinite;
+}
+
+/* -------------------------- */
+.graph_Carousel .slick-slide {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.25; /* Default opacity for all slides */
+}
+
+.graph_Carousel .slick-center {
+  opacity: 1 !important; /* Highlight center slide */
+}
+
+/* --------------------flip effect--------- */
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: #fff;
+}
+
+.flip-card-back {
+  /* background: #4a5568;
+  color: white; */
+  transform: rotateY(180deg);
+}
+
+/* --------------------Agent Flip----------------- */
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipped .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.footer {
+  font-family: "Inter";
+}
+
+/* .white-button {
+  border-image: linear-gradient(
+    180deg,
+    #e9e9e9 0%,
+    #e9e9e9 0.01%,
+    #ffffff 100%
+  );
+} */
+
+.white-button {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to top, #e9e9e9, #ffffff) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  box-sizing: border-box;
+}
+/* .white-button:hover {
+  background: linear-gradient(red, red) padding-box,
+    linear-gradient(to top, red, red) border-box;
+}
+ .tca-container {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+.tca-container:hover {
+  background-color: black !important;
+}
+.tca-container a {
+  pointer-events: none;
+} */
+
+.change-agent-button {
+  font-family: "JetBrains Mono";
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.tca_button {
+  background: linear-gradient(180deg, #e9e9e9 0%, #e9e9e9 0.01%, #ffffff 100%);
+  transition: all 0.3s ease;
+}
+
+.tca_button:hover {
+  background: linear-gradient(
+    180deg,
+    #e9e9e9 -14.42%,
+    #e9e9e9 -14.41%,
+    #ff997d 116.35%
+  );
+}
+
+.graph_card_background {
+  background: linear-gradient(180deg, rgba(61, 61, 61, 0.5) 0%, #f8f8f8 66.39%);
+  box-shadow: 0px 0px 0px 1px #0c002014;
+}
+
+/* WHO WE ARE PAGE */
+
+.partner_new_carousel {
+  background: linear-gradient(
+    180deg,
+    rgba(252, 252, 253, 0) 0%,
+    #f8f8f8 66.39%
+  );
+  box-shadow: 0px 0px 0px 1px #0c002014;
+  border-radius: 12px;
+}
+/* ------------------------------------ */
+.active_tab {
+  background: linear-gradient(180deg, #f4f4f4 0%, #fefefe 100%);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-width: 4px;
+  border-color: #ececec;
+  border-radius: 12px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+/* ---------------------------------------- */
+.how_we_do_it_graph_section div .graph_Carousel .slick-active {
+  background: linear-gradient(180deg, #ec5c35 0%, #fcfcfd 66.39%);
+  box-shadow: 0px 0px 0px 1px #0c002014;
+}
+
+.home_graph_section div .graph_Carousel .slick-active {
+  background: linear-gradient(180deg, #ec5c35 0%, #fcfcfd 66.39%);
+  box-shadow: 0px 0px 0px 1px #0c002014;
+}
+
+.chnageportal_graph div .graph_Carousel .slick-active {
+  background: linear-gradient(180deg, #ec5c35 0%, #fcfcfd 66.39%);
+  box-shadow: 0px 0px 0px 1px #0c002014;
+}
+
+
+/* --------------------------------Mobile View Text------------------------------ */
+.mobile-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* Adjust to show roughly half the text */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .mobile-truncate {
+      display: block;
+      -webkit-line-clamp: unset;
+      overflow: visible;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
